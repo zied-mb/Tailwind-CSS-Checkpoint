@@ -1,0 +1,456 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Tic Tac - Designer</h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:text-gray-300">Home</a>
+        <a href="#" class="hover:text-gray-300">About</a>
+        <a href="#" class="hover:text-gray-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="py-6 px-4 sm:p-6 md:py-10 md:px-8">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 gap-4 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
+      <!-- Header Section with Title -->
+      <div
+        class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
+        <h1 class="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
+          Graphique.Design_TicTac
+        </h1>
+      </div>
+
+      <!-- Image Gallery Section -->
+      <div
+        class="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
+        <img src="logo tictac.jpg" alt="Logo TicTac"
+          class="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full" loading="lazy">
+        <img src="Exprimez votre style unique.png" alt="Exprimez votre style unique"
+          class="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
+          loading="lazy">
+        <img src="tirage.png" alt="Tirage"
+          class="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
+          loading="lazy">
+      </div>
+
+      <!-- Reviews and Location Section -->
+      <dl
+        class="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2">
+        <dt class="sr-only">Reviews</dt>
+        <dd class="text-indigo-600 flex items-center dark:text-indigo-400">
+          <svg width="24" height="24" fill="none" aria-hidden="true" class="mr-1 stroke-current dark:stroke-indigo-500">
+            <path d="m12 5 2 5h5l-4 4 2.103 5L12 16l-5.103 3L9 14l-4-4h5l2-5Z" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span>4.89 <span class="text-slate-400 font-normal">(128)</span></span>
+        </dd>
+        <dt class="sr-only">Location</dt>
+        <dd class="flex items-center">
+          <svg width="2" height="2" aria-hidden="true" fill="currentColor" class="mx-3 text-slate-300">
+            <circle cx="1" cy="1" r="1" />
+          </svg>
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="mr-1 text-slate-400 dark:text-slate-500" aria-hidden="true">
+            <path d="M18 11.034C18 14.897 12 19 12 19s-6-4.103-6-7.966C6 7.655 8.819 5 12 5s6 2.655 6 6.034Z" />
+            <path d="M14 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
+          </svg>
+          Tunisie, Kelibia
+        </dd>
+      </dl>
+
+      <!-- Button Section -->
+      <div
+        class="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
+        <button type="button" class="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Check
+          availability</button>
+      </div>
+
+      <!-- Description Section -->
+      <p
+        class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">
+        🎨 Specializes in the design of logos and advertising posters <br>💡 Bring your ideas to life with innovative
+        style <br>📩 Contact me to discuss your project
+      </p>
+    </div>
+  </main>
+
+
+
+  <section class="bg-white py-8">
+    <div class="container mx-auto text-center">
+      <h2 class="text-xl font-semibold mb-4">Categories</h2>
+      <div class="flex flex-wrap justify-center gap-2 text-black">
+        <!-- Repeat for each category -->
+        <span class="bg-yellow-500 px-3 py-1 rounded-full text-sm sm:text-base">Logo</span>
+        <span class="bg-yellow-500 px-3 py-1 rounded-full text-sm sm:text-base">Affiche Publicitaire</span>
+        <span class="bg-yellow-500 px-3 py-1 rounded-full text-sm sm:text-base">Menu Restaurant</span>
+        <span class="bg-yellow-500 px-3 py-1 rounded-full text-sm sm:text-base">Exprimez votre style unique</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="recent-posts" class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4 text-center">Recent Posts</h2>
+
+
+    <div class="flex flex-col md:flex-row font-sans bg-white shadow-md rounded-lg m-4">
+      <!-- Image Section -->
+      <div class="flex-none w-full md:w-48 relative">
+        <img src="./tshirt1.png" alt="" class="w-full h-64 md:h-full object-cover rounded-t-lg md:rounded-l-lg"
+          loading="lazy" />
+      </div>
+
+      <!-- Form Section -->
+      <form class="flex-auto p-6">
+        <div class="flex flex-wrap">
+          <h1 class="flex-auto text-lg font-semibold text-slate-900">
+            Amazigh Jawelry
+
+          </h1>
+          <div class="text-lg font-semibold text-slate-500">
+            38.900 DT
+          </div>
+          <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+            In stock
+          </div>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+          <div class="space-x-2 flex text-sm overflow-auto">
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="xs" checked />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                XS
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="s" />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                S
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="m" />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                M
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="l" />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                L
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="xl" />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                XL
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 text-sm font-medium">
+          <div class="flex-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+              Buy now
+            </button>
+            <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+              Add to bag
+            </button>
+          </div>
+          <button
+            class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+            type="button" aria-label="Like">
+            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Shipping Note -->
+        <p class="text-sm text-slate-700">
+          Free shipping on all continental US orders.
+        </p>
+      </form>
+    </div>
+
+
+
+
+    <div class="flex flex-col md:flex-row font-sans bg-white shadow-md rounded-lg m-4">
+      <!-- Image Section -->
+      <div class="flex-none w-full md:w-48 relative">
+        <img src="tshirt2.png" alt="" class="w-full h-64 md:h-full object-cover rounded-t-lg md:rounded-l-lg"
+          loading="lazy" />
+      </div>
+
+      <!-- Form Section -->
+      <form class="flex-auto p-6">
+        <div class="flex flex-wrap">
+          <h1 class="flex-auto text-lg font-semibold text-slate-900">
+            YOK PARA YOK HAYAT OVERSIZE
+          </h1>
+          <div class="text-lg font-semibold text-slate-500">
+            55.900 DT
+          </div>
+          <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+            In stock
+          </div>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+          <div class="space-x-2 flex text-sm overflow-auto">
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="xs" checked />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                XS
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="s" />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                S
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="m" />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                M
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="l" />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                L
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="size" type="radio" value="xl" />
+              <div
+                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                XL
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 text-sm font-medium">
+          <div class="flex-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+              Buy now
+            </button>
+            <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+              Add to bag
+            </button>
+          </div>
+          <button
+            class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+            type="button" aria-label="Like">
+            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Shipping Note -->
+        <p class="text-sm text-slate-700">
+          Free shipping on all continental US orders.
+        </p>
+      </form>
+    </div>
+
+
+
+
+    <div class="flex flex-col md:flex-row font-sans bg-white shadow-md rounded-lg m-4">
+      <!-- Image Section -->
+      <div class="flex-none w-full md:w-48 relative">
+        <img src="tirage.png" alt="" class="w-full h-64 md:h-full object-cover rounded-t-lg md:rounded-l-lg"
+          loading="lazy" />
+      </div>
+
+      <!-- Form Section -->
+      <form class="flex-auto p-6">
+        <div class="flex flex-wrap">
+          <h1 class="flex-auto text-lg font-semibold text-slate-900">
+            Tirage Photo
+          </h1>
+          <div class="text-lg font-semibold text-slate-500">
+            9.900 DT - 18.600 DT
+          </div>
+          <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+            Donnez vie à vos moments préférés avec nos tirages photo carrés !
+
+            • Dimension: 10×10 CM
+            • papier photo pelliculé
+          </div>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+          <div class="space-x-2 flex text-sm overflow-auto">
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 text-sm font-medium">
+          <div class="flex-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+              Buy now
+            </button>
+            <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+              Add to bag
+            </button>
+          </div>
+          <button
+            class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+            type="button" aria-label="Like">
+            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Shipping Note -->
+        <p class="text-sm text-slate-700">
+          Free shipping on all continental US orders.
+        </p>
+      </form>
+    </div>
+
+
+
+
+
+    <div class="flex flex-col md:flex-row font-sans bg-white shadow-md rounded-lg m-4">
+      <!-- Image Section -->
+      <div class="flex-none w-full md:w-48 relative">
+        <img src="Exprimez votre style unique.png" alt=""
+          class="w-full h-64 md:h-full object-cover rounded-t-lg md:rounded-l-lg" loading="lazy" />
+      </div>
+
+      <!-- Form Section -->
+      <form class="flex-auto p-6">
+        <div class="flex flex-wrap">
+          <h1 class="flex-auto text-lg font-semibold text-slate-900">
+            Tirage Photo
+          </h1>
+          <div class="text-lg font-semibold text-slate-500">
+            10.000 DT - 100.000 DT
+          </div>
+          <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+            Donnez vie à vos moments préférés avec nos tirages photo carrés !
+
+            • Dimension: 10×10 CM
+            • papier photo pelliculé
+          </div>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+          <div class="space-x-2 flex text-sm overflow-auto">
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 text-sm font-medium">
+          <div class="flex-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+              Buy now
+            </button>
+            <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+              Add to bag
+            </button>
+          </div>
+          <button
+            class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+            type="button" aria-label="Like">
+            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Shipping Note -->
+        <p class="text-sm text-slate-700">
+          Free shipping on all continental US orders.
+        </p>
+      </form>
+    </div>
+
+
+
+
+
+    <section class="bg-white py-8">
+      <div class="container mx-auto text-center">
+        <h2 class="text-xl font-semibold mb-4">Subscribe to our Newsletter</h2>
+        <form class="max-w-md mx-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <input type="email" placeholder="Enter your email"
+            class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-gray-200 py-6 m-2">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-sm">&copy; 2024 Tic Tac - Designer. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <!-- Social Media Links with Icons -->
+          <a href="https://www.facebook.com/zied.mb.1919/" class="hover:text-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22.675 0h-21.35C.598 0 0 .598 0 1.325v21.351C0 23.402.598 24 1.325 24h11.495v-9.293H9.689v-3.622h3.131V8.414c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.099 2.795.143v3.24h-1.918c-1.504 0-1.794.715-1.794 1.764v2.314h3.587l-.467 3.622h-3.12V24h6.116c.727 0 1.325-.598 1.325-1.324V1.325C24 .598 23.402 0 22.675 0z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/graphique.design_tictac/" class="hover:text-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.307.975.975 1.245 2.242 1.307 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.307 3.608-.975.975-2.242 1.245-3.608 1.307-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.307-.975-.975-1.245-2.242-1.307-3.608C2.175 15.583 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.332-2.633 1.307-3.608C4.515 2.497 5.782 2.227 7.148 2.165 8.414 2.106 8.794 2.163 12 2.163zm0-2.163C8.687 0 8.265.013 7.107.07 5.824.129 4.666.317 3.727 1.256 2.787 2.196 2.6 3.354 2.542 4.637 2.485 5.795 2.472 6.215 2.472 12c0 5.784.013 6.204.07 7.362.058 1.283.245 2.441 1.185 3.381.939.94 2.097 1.127 3.38 1.185 1.158.057 1.578.07 7.362.07s6.204-.013 7.362-.07c1.283-.058 2.441-.245 3.381-1.185.94-.939 1.127-2.097 1.185-3.38.057-1.158.07-1.578.07-7.362s-.013-6.204-.07-7.362c-.058-1.283-.245-2.441-1.185-3.381-.939-.939-2.097-1.127-3.38-1.185C15.734.013 15.314 0 12 0zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.126c-2.187 0-3.964-1.776-3.964-3.964s1.776-3.964 3.964-3.964 3.964 1.776 3.964 3.964-1.777 3.964-3.964 3.964zm6.406-11.845c-.796 0-1.44.644-1.44 1.44s.644 1.44 1.44 1.44 1.44-.644 1.44-1.44-.644-1.44-1.44-1.44z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/zied-meddeb-7087a2266/" class="hover:text-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.482c0-1.271-.027-2.908-1.77-2.908-1.771 0-2.043 1.382-2.043 2.813v5.577h-3v-10h2.873v1.367h.04c.399-.756 1.373-1.553 2.826-1.553 3.019 0 3.574 1.987 3.574 4.569v5.617z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+
+</html>
